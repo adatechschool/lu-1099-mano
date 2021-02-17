@@ -85,3 +85,49 @@ const nomfonction  = async () =>{
 - Existe-t-il des contextes (langages, environnements, outils) où elle n'existe pas ? 
 
 - Quelles sont ses alternatives ? 
+
+=> Pour entretien :
+Expliquer
+Afin de préparer votre échange avec l’encadrante, voici une liste de termes à savoir expliquer :
+
+####Callback :
+
+- En termes simples: un callback est une fonction qui doit être exécutée après qu’une autre fonction ait fini de s’exécuter - d’où le nom «call back».
+
+- De maniere plus complexe, en JS, les fonctions sont des objets. Pour cette raison, les fonctions peuvent prendre d'autres fonctions comme arguments et peuvent être "returned" par d'autres fonctions.
+
+- Les callbacks sont un moyen de s’assurer que certaines parties du code ne s’exécutent pas tant qu’une autre partie du code n’est pas déjà terminée.
+
+####Promesses :
+
+- Une promesse est un objet qui peut produire une valeur unique dans le futur : soit une valeur résolue, soit une raison pour laquelle elle n’a pas été résolue (par exemple, une erreur réseau s’est produite). Une promesse peut être dans l'un des 3 états possibles: realisee, rejetée ou en attente. Les utilisateurs de promesses peuvent y ajouter des callbacks pour gérer la valeur realisee ou la raison du rejet.
+
+-Enchaînement de promesses :
+Comme .then () renvoie toujours une nouvelle promesse, il est possible d'enchaîner les promesses avec un contrôle précis sur la manière et le moment de traitement des erreurs. Les promesses vous permettent d’imiter le comportement try / catch du code synchrone normal.
+
+####This
+"This" fait référence à une nouvelle instance
+
+- Lorsqu'une fonction est appelée avec le mot-clé new, la fonction est appelée fonction "constructor" et renvoie une nouvelle instance. Dans de tels cas, la valeur de this fait référence à une instance nouvellement créée.
+- En JavaScript, la propriété d'un objet peut être une méthode ou une simple valeur. Lorsqu'une méthode d'objet est appelée, alors "this" fait référence à l'objet qui contient la méthode appelée.
+- En resume : par défaut, "this" fait reference a un objet global, qui est global dans le cas de NodeJS et d'un objet window dans le cas d'un navigateur.
+  Lorsqu'une méthode est appelée en tant que propriété d'un objet, alors "this" fait référence à l'objet parent.
+  Lorsqu'une fonction est appelée avec le "new operator", alors this fait référence à l'instance nouvellement créée.
+  Lorsqu'une fonction est appelée à l'aide des méthodes call et apply, alors "this" fait référence à la valeur transmise comme premier argument de la méthode call ou apply
+
+####Bind
+
+- La méthode bind retourne une nouvelle méthode avec "this" faisant référence au premier argument passé.
+
+####Requête
+JavaScript utilise des événements et des callbacks pour gérer les requetes asynchrones.
+La structure des événements et des callbacks est le mécanisme fondamental par lequel JS est capable de gérer efficacement les tâches qui se chevauchent, comme répondre aux demandes d'I / O.
+Dans le navigateur client, les callbacks permettent au code JavaScript de passer un "call" dont la réponse peut prendre beaucoup de temps, comme un "call" d'API de service Web, sans «geler» la page Web pendant qu'elle attend une réponse.
+Dans les applications côté serveur, comme celles exécutées sur Node.js, c'est la structure des événements et des callbacks qui permet d'utiliser efficacement JavaScript pour les applications qui nécessitent par nature beaucoup de multitâche asynchrone, comme les serveurs Web.
+
+####Évènement
+JavaScript dans le navigateur utilise un modèle de programmation base sur les "events".
+Tout commence par suivre un "event".
+L'event peut être le chargement du DOM, ou une requête asynchrone qui termine la récupération, ou un utilisateur cliquant sur un élément ou l'utilisation des touches sur le clavier.
+Il existe de nombreux types d'événements différents : onclick, onload, onmouseover, onmouseout, onunload. => Ce sont des addEventListener() ce qui repond a la notion suivante.
+####Listener
