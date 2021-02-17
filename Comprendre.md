@@ -120,13 +120,13 @@ Comme .then () renvoie toujours une nouvelle promesse, il est possible d'enchaî
 - La méthode bind retourne une nouvelle méthode avec "this" faisant référence au premier argument passé.
 
 ####Requête
-JavaScript utilise des événements et des callbacks pour gérer les requetes asynchrones.
-La structure des événements et des callbacks est le mécanisme fondamental par lequel JS est capable de gérer efficacement les tâches qui se chevauchent, comme répondre aux demandes d'I / O.
-Dans le navigateur client, les callbacks permettent au code JavaScript de passer un "call" dont la réponse peut prendre beaucoup de temps, comme un "call" d'API de service Web, sans «geler» la page Web pendant qu'elle attend une réponse.
-Dans les applications côté serveur, comme celles exécutées sur Node.js, c'est la structure des événements et des callbacks qui permet d'utiliser efficacement JavaScript pour les applications qui nécessitent par nature beaucoup de multitâche asynchrone, comme les serveurs Web.
+- JavaScript utilise des événements et des callbacks pour gérer les requetes asynchrones.
+- La structure des événements et des callbacks est le mécanisme fondamental par lequel JS est capable de gérer efficacement les tâches qui se chevauchent, comme répondre aux demandes d'I / O.
+- Dans le navigateur client, les callbacks permettent au code JavaScript de passer un "call" dont la réponse peut prendre beaucoup de temps, comme un "call" d'API de service Web, sans «geler» la page Web pendant qu'elle attend une réponse.
+- Dans les applications côté serveur, comme celles exécutées sur Node.js, c'est la structure des événements et des callbacks qui permet d'utiliser efficacement JavaScript pour les applications qui nécessitent par nature beaucoup de multitâche asynchrone, comme les serveurs Web.
 
 ####Évènement
-JavaScript dans le navigateur utilise un modèle de programmation base sur les "events".
+- JavaScript dans le navigateur utilise un modèle de programmation base sur les "events".
 Tout commence par suivre un "event".
 L'event peut être le chargement du DOM, ou une requête asynchrone qui termine la récupération, ou un utilisateur cliquant sur un élément ou l'utilisation des touches sur le clavier.
 Il existe de nombreux types d'événements différents : onclick, onload, onmouseover, onmouseout, onunload. => Ce sont des addEventListener() ce qui repond a la notion suivante.
