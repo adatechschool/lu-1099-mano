@@ -1,6 +1,6 @@
 Projet réalisé par Margaux Lenne et Noëmie Le Roux à Ada Tech School.
 
-# Level_up_aynchrone
+# Level_up_asynchrone
 Le but de cette semaine était de découvrir ou approfondir les notions suivantes :
 - Callback
 - Promesses
